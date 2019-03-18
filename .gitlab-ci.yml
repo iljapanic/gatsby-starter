@@ -1,0 +1,14 @@
+image: node:latest
+
+pages:
+  script:
+  - npm install
+  - node_modules/.bin/gatsby build --prefix-paths
+  artifacts:
+    paths:
+    - public
+  cache:
+    paths:
+      - node_modules
+  only:
+  - master

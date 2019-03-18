@@ -1,0 +1,79 @@
+:root {
+
+  /* font */
+  --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-small: 0.9rem;
+  --font-large: 1.15rem;
+
+  /* wraps */
+  --wrap: 960px;
+  --wrap-s: 640px;
+  --wrap-l: 54em;
+  --wrap-xl: 68em;
+
+  /* colors - grays */
+  --gray-900: #444446;
+  --gray-800: #555557;
+  --gray-700: #666668;
+  --gray-600: #7f7f81;
+  --gray-500: #99999b;
+  --gray-400: #b3b3b4;
+  --gray-300: #d5d5d6;
+  --gray-200: #efefef;
+  --gray-100: #fdfdfd;
+
+  /* colors - palette */
+  --color-primary: #fdf3ec;
+  --shade-0: #e6ddd7;
+  --shade-1: #d0c7c2;
+  --shade-2: #b9b1ac;
+  --shade-3: #a29b97;
+  --shade-4: #8b8581;
+  --shade-5: #736f6c;
+  --shade-6: #5c5956;
+  --shade-7: #454341;
+  --shade-8: #454341;
+  --shade-9: #171716;
+  --tint-0: #fdf4ed;
+  --tint-1: #fdf5ef;
+  --tint-2: #fdf6f1;
+  --tint-3: #fdf7f2;
+  --tint-4: #fdf8f4;
+  --tint-5: #fef9f6;
+  --tint-6: #fefaf8;
+  --tint-7: #fefbf9;
+  --tint-8: #fefcfb;
+  --tint-9: #fefcfb;
+
+  /* colors - vendor */
+  --color-facebook: #546ba6;
+  --color-instagram: #d1617e;
+
+  /* colors - misc. */
+  --color-red: #ac3931;
+  --color-green: #7b9e96;
+
+
+  /* colors - assigned */
+  --color-text:  hsla(0, 0%, 0%, 0.8);
+  --color-bg: white;
+
+  --color-link: #87a69f;
+  --color-link-hover: #5a736e;
+  
+  --color-button: var(--color-primary);
+  --color-button-hover: var(--shade-0);
+
+  --color-alert: var(--color-red);
+  --color-success: var(--color-green);
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --font-base-size: 19px;
+  }
+}
+
+/* custom media queries */
+@custom-media --desktop (min-width: 1000px);

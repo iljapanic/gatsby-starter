@@ -1,0 +1,54 @@
+{
+  "name": "gatsby-starter",
+  "private": true,
+  "description": "A personal Gatsby.js starter",
+  "version": "0.1.0",
+  "author": "Ilja Panic <ilja@iljapanic.com>",
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "dayjs": "^1.8.10",
+    "del-cli": "^1.1.0",
+    "gatsby": "^2.1.38",
+    "gatsby-image": "^2.0.34",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-postcss": "^2.0.7",
+    "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-sharp": "^2.0.29",
+    "gatsby-source-filesystem": "^2.0.27",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "postcss-color-function": "^4.0.1",
+    "postcss-css-variables": "^0.12.0",
+    "postcss-custom-media": "^7.0.7",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "todo",
+    "GTD"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "developLocal": "gatsby develop --host $(ifconfig | awk '/inet 192.168.[0-9]+.[0-9]+/{print $2}') --port 8000",
+    "clear": "del .cache/ && del public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/weekboard/weekboard-app"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/weekboard/weekboard-app/issues"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}
